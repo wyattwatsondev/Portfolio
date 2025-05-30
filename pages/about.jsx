@@ -45,7 +45,7 @@ export default function About() {
           </div>
 
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center text-gray-700 dark:text-gray-300 max-w-xl mb-6 leading-relaxed">
-            Hey there! 👋 I'm <strong>Wyatt Watson</strong> — a passionate full-stack software engineer
+            Hey there! 👋 I&apos;m <strong>Wyatt Watson</strong> — a passionate full-stack software engineer
             with a flair for crafting clean, modern, and intuitive web experiences. From frontend animations to backend APIs,
             I love building tech that solves real-world problems.
           </p>
@@ -59,9 +59,9 @@ export default function About() {
           <CategoryCard />
 
           <section className="mt-10 px-4 sm:px-6 md:px-10 text-gray-900 dark:text-white leading-relaxed text-justify">
-            <p className="text-base sm:text-lg font-light mb-6">
+            <p className="text-base sm:text-lg font-light">
               I specialize in building high-performing, scalable, and user-friendly applications using the latest technologies in the web stack.
-              Whether it's a responsive frontend or a robust backend service, I aim for excellence in everything I ship.
+              Whether it&apos;s a responsive frontend or a robust backend service, I aim for excellence in everything I ship.
               <span className="inline-flex items-baseline mx-1">
                 <Image src={Rocket} alt="Rocket icon" className="w-5 h-5 self-center" />
               </span>
@@ -69,8 +69,8 @@ export default function About() {
             </p>
 
             <p className="text-base sm:text-lg font-light">
-              Outside the code editor, I'm constantly exploring new ideas, contributing to open-source, and sharing what I learn. 
-              Let’s build something amazing together!
+              Outside the code editor, I&apos;m constantly exploring new ideas, contributing to open-source, and sharing what I learn. 
+              Let&apos;s build something amazing together!
             </p>
           </section>
         </div>
