@@ -2,7 +2,7 @@ import Head from "next/head";
 import Work from "@/pages/work";
 import About from "@/pages/about";
 import Tech from "@/pages/tech";
-import Contact from "@/components/contact"
+import Contact from "@/components/Contact"
 
 export default function Home() {
   return (
