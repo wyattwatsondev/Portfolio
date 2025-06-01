@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Work from "@/pages/work";
+import About from "@/pages/about";
+import Tech from "@/pages/tech";
+import Contact from "@/components/contact"
 
 export default function Home() {
   return (
@@ -8,41 +11,39 @@ export default function Home() {
         <title>Wyatt Watson | Freelancer | Web Developer</title>
         <meta
           name="description"
-          content="Portfolio of Fahad Alam, a frontend developer skilled in React, Next.js, Tailwind CSS, and modern web technologies."
+          content="Portfolio of Wyatt Watson, a Web developer skilled in React, Next.js, Tailwind CSS, and modern web technologies."
         />
         <meta
           name="keywords"
-          content="Fahad Alam, Frontend Developer, React Developer, Next.js, Tailwind CSS, Web Developer Portfolio"
+          content="Wyatt Watson , Website Developer, React Developer, Next.js, Tailwind CSS, Web Developer Portfolio"
         />
-        <meta name="author" content="Fahad Alam" />
+        <meta name="author" content="Wyatt Watson" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Open Graph (OG) Tags */}
-        <meta property="og:title" content="Fahad Alam | Frontend Developer Portfolio" />
+        <meta property="og:title" content="Wyatt Watson | Website Developer Portfolio" />
         <meta
           property="og:description"
-          content="Explore the projects and skills of Fahad Alam, a passionate frontend developer from SMIT."
+          content="Explore the projects and skills of Wyatt Watson, a passionate Website developer from SMIT."
         />
         <meta property="og:image" content="/hero.jpg" />
-        <meta property="og:url" content="https://fahadalam.vercel.app" />
+        <meta property="og:url" content="https://wyattwatson.vercel.app" />
         <meta property="og:type" content="website" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Fahad Alam | Frontend Developer Portfolio" />
+        <meta name="twitter:title" content="Wyatt Watson | Web Developer Portfolio" />
         <meta
           name="twitter:description"
-          content="Check out Fahad Alam's web development portfolio showcasing projects in React, Next.js, and more."
+          content="Check out Wyatt Watson's web development portfolio showcasing projects in React, Next.js, and more."
         />
         <meta name="twitter:image" content="/hero.jpg" />
 
-        {/* Favicon */}
         <link rel="icon" href="/hero.jpg" />
-        <link rel="canonical" href="https://fahadalam.vercel.app" />
+        <link rel="canonical" href="https://wyattwatson.vercel.app" />
       </Head>
-
-      {/* Sirf Work component dikhaya ja raha hai */}
+      <About/>
+      <Tech />
       <Work />
+      <Contact/>
     </>
   );
 }

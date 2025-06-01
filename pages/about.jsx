@@ -2,9 +2,16 @@ import { useEffect } from "react";
 import { useTheme } from "next-themes";
 import Head from "next/head";
 import Image from "next/image";
+import {
+  FaCode,
+  FaServer,
+  FaRocket,
+  FaLaptopCode,
+  FaShopify,
+  FaTools,
+} from "react-icons/fa";
 
 import CategoryCard from "@/components/CategoryCard";
-
 import Hero from "@/public/hero.jpg";
 import Rocket from "@/public/Rocket.svg";
 
@@ -73,11 +80,76 @@ export default function About() {
               Let&apos;s build something amazing together!
             </p>
           </section>
+
+          {/* ✦ Refined Services Section */}
+          <section className="mt-20 w-full">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-10">
+              ✦ My Services
+            </h2>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-[#1c1c1e] border border-gray-200 dark:border-gray-700 rounded-xl shadow-md p-6 relative transition hover:shadow-lg"
+                >
+                  {/* Gradient bar or icon bubble */}
+                  <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 text-white text-xl shadow-md">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </main>
     </div>
   );
 }
+
+const services = [
+  {
+    title: "Custom Website Development",
+    description:
+      "Tailor-made, responsive websites that reflect your brand and goals.",
+    icon: <FaLaptopCode />,
+  },
+  {
+    title: "Frontend Engineering",
+    description:
+      "Modern UIs with React, animations, TailwindCSS, and pixel-perfect layouts.",
+    icon: <FaCode />,
+  },
+  {
+    title: "Backend API Development",
+    description:
+      "Robust APIs using Node.js, Express, or Next.js serverless functions.",
+    icon: <FaServer />,
+  },
+  {
+    title: "Performance Optimization",
+    description:
+      "Speed-focused solutions: lazy loading, SSR, caching, code-splitting.",
+    icon: <FaRocket />,
+  },
+  {
+    title: "E-Commerce Integration",
+    description:
+      "Online store setup with Shopify, Stripe, and headless CMS solutions.",
+    icon: <FaShopify />,
+  },
+  {
+    title: "CMS & Blog Setup",
+    description:
+      "Powerful and flexible CMS integrations like Sanity, Contentful, and more.",
+    icon: <FaTools />,
+  },
+];
 
 // ArrowSvg component
 function ArrowSvg({ flipped }) {
